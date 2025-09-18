@@ -31,13 +31,13 @@ int main()
 	std::cout << "Введите третье число: ";
 	std::cin >> int3;
 
-
+								
 	intMin =	(int1 <= int2) && (int1 <= int3) ? int1 : (int2 <= int3 ? int2 : int3);
 	
 	intMax =	(int1 >= int2) && (int1 >= int3) ? int1 : (int2 >= int3 ? int2 : int3);
 	
 	intAvg =	((intMin == int1) && (intMax == int2)) || ((intMax == int1) && (intMin == int2)) ? int3 :
-				((intMin == int1) && (intMax == int3)) || ((intMax == int1) && (intMin == int3)) ? int2: 
+				((intMin == int1) && (intMax == int3)) || ((intMax == int1) && (intMin == int3)) ? int2 : 
 				int1;
 
 
